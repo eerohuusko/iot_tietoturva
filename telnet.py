@@ -8,7 +8,7 @@ def prompt() :
 if __name__ == "__main__":
 
     if(len(sys.argv) < 3) :
-        print ("Usage : python telnet.py hostname port")
+        print ("Usage : python3 telnet.py hostname port")
         sys.exit()
 
     host = sys.argv[1]
