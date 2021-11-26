@@ -1,7 +1,7 @@
 <?php
 //avataan yhteys mysql tietokantaan "tunnukset"
 mysql_connect("localhost", "root", "salasana") or die("ei yhteyttä");
-mysql_select_db("tunnukset");
+mysql_select_db("ktunnukset");
 
 //Otetaan vastaan kirjautumislomakkeesta tulleet tiedot
 $kayttajatunnus = $_POST['kayttajatunnus'];
