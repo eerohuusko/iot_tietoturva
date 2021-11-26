@@ -1,5 +1,3 @@
-//kirjautuminen.php
-
 <?php
 //avataan yhteys mysql tietokantaan "tunnukset"
 mysql_connect("localhost", "root", "salasana") or die("ei yhteyttä");
