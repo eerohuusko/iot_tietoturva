@@ -7,6 +7,5 @@ INSERT INTO ktunnukset
         VALUES ('2', 'jjokke', 'Passu');
 INSERT INTO ktunnukset
         VALUES ('3', 'iotti', 'Iotti123');
-        
 INSERT INTO ktunnukset
         VALUES ('3', 'Hakkeri', 'supersecret');
