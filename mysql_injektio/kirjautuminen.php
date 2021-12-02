@@ -17,7 +17,7 @@ $rivit = mysql_num_rows($tulos);
 // jos kysely palauttaa vain yhden rivin = kirjautuminen on onnistunut
 // muussa tapauksessa kerrotaan epäonnistuneesta kirjautumisesta
 if ($rivit == 1) {
-header("location:kirjatuminen_onnistui.php");
+header("location:kirjautuminen_onnistui.php");
 }
 else {
 echo "Virhe kirjautumisessa" . "<br>";
