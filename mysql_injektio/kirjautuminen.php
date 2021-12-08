@@ -1,7 +1,7 @@
 <?php
 //avataan yhteys mysql tietokantaan "tunnukset"
 mysql_connect("localhost", "root", "salasana") or die("ei yhteyttä");
-mysql_select_db("tunnukset");
+mysql_select_db("ktunnukset");
 
 //Otetaan vastaan kirjautumislomakkeesta tulleet tiedot
 $kayttajatunnus = $_POST['kayttajatunnus'];
@@ -11,7 +11,7 @@ $salasana = $_POST['salasana'];
 // Nyt sitä ei tehdä, joten kirjautumissivu on haavoittuvainen SQL injektiolle!
 
 // muodostetaan kysely, suoritetaan se ja lasketaan kyselyn rivit
-$kysely = "SELECT * FROM tunnukset WHERE kayttajanimi='$kayttajatunnus' AND salasana='$salasana'";
+$kysely = "SELECT * FROM ktunnukset WHERE kayttajanimi='$kayttajatunnus' AND salasana='$salasana'";
 $tulos = mysql_query($kysely);
 $rivit = mysql_num_rows($tulos);
 // jos kysely palauttaa vain yhden rivin = kirjautuminen on onnistunut
